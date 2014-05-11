@@ -5,16 +5,20 @@ $(document).ready(function() {
 		alert("The Value Must be Less than 200 and Numerical!!");	
 	};
 
-	var endNumber = +prompt("Please Enter a Numerical Value Less than 200.");
+	var numPrompt = function () {
+		+prompt("Please Enter a Numerical Value Less than 200.");
+	}
+
+	var endNumber = numPrompt();
 
 	while (endNumber > 200) {
 		numAlert();
-		endNumber = +prompt("Please Enter a Numerical Value Less than 200.");
+		endNumber = numPrompt();
 	}
 
 	while (endNumber === NaN) {
 		numAlert();
-		endNumber = +prompt("Please Enter a Numerical Value Less than 200.");
+		endNumber = numPrompt();
 	}
 
 
