@@ -5,22 +5,25 @@ $(document).ready(function() {
 		alert("The Value Must be Less than 200 and Numerical!!");	
 	};
 
-	var numPrompt = function () {
-		+prompt("Please Enter a Numerical Value Less than 200.");
+	var numDef = function () {
+		return +prompt("Please Enter a Numerical Value Less than 200.");
 	}
 
-	var endNumber = numPrompt();
+	var endNumber = numDef();
+	console.log (endNumber);
 
-	while (endNumber > 200) {
+
+	//while (endNumber >200) {
+	//	numAlert();
+	//	endNumber = numDef();
+	//	console.log (endNumber);
+	//}
+
+	while (endNumber = "NaN") {
 		numAlert();
-		endNumber = numPrompt();
+		endNumber = numDef();
+		console.log (endNumber);
 	}
-
-	while (endNumber === NaN) {
-		numAlert();
-		endNumber = numPrompt();
-	}
-
 
 	for (var i=1; i<endNumber; i++) {
 		if (i%15 === 0) {
