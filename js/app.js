@@ -13,17 +13,17 @@ $(document).ready(function() {
 	console.log (endNumber);
 
 
-	//while (endNumber >200) {
-	//	numAlert();
-	//	endNumber = numDef();
-	//	console.log (endNumber);
-	//}
-
-	while (endNumber = "NaN") {
+	while (endNumber >200) {
 		numAlert();
 		endNumber = numDef();
 		console.log (endNumber);
 	}
+
+	//while (endNumber = "NaN") {
+	//	numAlert();
+	//	endNumber = numDef();
+	//	console.log (endNumber);
+	//}
 
 	for (var i=1; i<endNumber; i++) {
 		if (i%15 === 0) {
