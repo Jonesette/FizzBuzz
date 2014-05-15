@@ -7,13 +7,13 @@ $(document).ready(function() {
 
 	var numDef = function () {
 		return +prompt("Please Enter a Numerical Value Less than 200.");
-	}
+	};
 
 	var endNumber = numDef();
 	console.log (endNumber);
 
 
-	while (endNumber >200) {
+	while ((endNumber >200) || (isNaN(endNumber))) {
 		numAlert();
 		endNumber = numDef();
 		console.log (endNumber);
